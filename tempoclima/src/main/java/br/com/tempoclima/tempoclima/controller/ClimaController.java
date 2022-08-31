@@ -27,4 +27,10 @@ private ClimaService climaService;
         climaService.pegarPorCidade(cityName);
         return climaService.inicio();
     }
+
+    @GetMapping("/temperatura/{cityName}/{stateCode}")
+    public String mostrarPorCidadeEstado(@PathVariable ("cityName") String cityName, @PathVariable("stateCode") String stateCode)throws IOException, InterruptedException{
+        climaService.pegarPorCidadeEstado(cityName, stateCode);
+        return climaService.inicio();
+    }
 }

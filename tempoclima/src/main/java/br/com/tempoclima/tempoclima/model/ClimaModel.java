@@ -3,7 +3,7 @@ package br.com.tempoclima.tempoclima.model;
 
 public class ClimaModel {
     private String cityName;
-    private String stateCode = "SP";
+    private String stateCode;
     private String countryCode = "BR";
     private String apiKey = "d98d163d1271e06235085bf104adfc29";
     private String language = "pt_br";
